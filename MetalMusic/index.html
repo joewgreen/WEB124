@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Metal Music</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul class="nav-list">
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Heavy_metal_music">
+                    History of Metal
+                </a>
+            </li>
+            <li>
+                <a href="https://www.albumoftheyear.org/ratings/user-highest-rated/all/heavy-metal/">
+                    List of top metal albums
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=nw1AA2wKI34">
+                    An intro to subgenres
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- Images and Main Title -->
+        <div class="hero">
+
+            <div class="image1">
+                <img src="metal1.avif" alt="Metal guitarist performing">
+            </div>
+
+            <div class="title">
+                <h1>Metal Music</h1>
+            </div>
+
+            <div class="image2">
+                <img src="metal2.avif" alt="Metal drummer performing">
+            </div>
+
+        </div>
+
+        <!-- Content Boxes -->
+        <div class="boxes">
+
+            <!-- History Box -->
+            <div class="history-box">
+
+                <div class="head1">
+                    <h2>The History of Metal:</h2>
+                </div>
+
+                <div class="history">
+                    <p>
+                        Metal, (or Heavy Metal), is a sub genre of rock music
+                        that features heavy and loud guitar, an emphatic
+                        rythm section, and vigorous vocals.
+
+                        The origin of the genre can be traced to louder
+                        rock bands of the late 1960's and early 1970's.
+
+                        A few of these pioneering bands include Led Zeppelin,
+                        Black Sabbath, and Deep Purple.
+
+                        They took the louder, more heavy elements of blues
+                        rock, psychadelic rock and acid rock and made this
+                        more aggresive rock sound their own.
+
+                        Now, nearly 60 years after the genre's inception,
+                        metal is one of the most popular sub genres of
+                        rock music.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Subgenres Box -->
+            <div class="subgenre-box">
+
+                <div class="head2">
+                    <h2>Sub-Genres</h2>
+                </div>
+
+                <div class="sub-genres">
+                    <p>
+                        What makes metal so captivating to me personally,
+                        are the many bands and sub genres that have expanded
+                        the genre further.
+
+                        Do you want louder and more aggresive guitar?
+                        Do you like an emphasis on thudding and energetic bass?
+
+                        Do you like music that is long, winding, and tells
+                        a story?
+
+                        There's absolutely a sub genre of metal that
+                        will scratch your itch.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Popular Subgenres Box -->
+            <div class="genreList-box">
+
+                <div class="head3">
+                    <h2>A few of the most popular sub genres are:</h2>
+                </div>
+
+                <ul class="genreList">
+                    <li>
+                        Black metal: more of a creepy, haunting style of metal
+                    </li>
+
+                    <li>
+                        Post metal: Longer, more drawn out songs with more
+                        of an emphasis on atmosphere than melody
+                    </li>
+
+                    <li>
+                        Nu metal: Metal, or hard rock music mixed with hip hop
+                    </li>
+
+                    <li>
+                        Glam metal: Metal with more pop sensabilites,
+                        not as agressive as other sub genres
+                    </li>
+
+                    <li>
+                        Metalcore: Fuses metal with punk/hardcore punk music,
+                        often with odd time signatures and guitar playing.
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Favorite Bands Box -->
+            <div class="bands-box">
+
+                <div class="head4">
+                    <h2>My Favorite Metal Bands</h2>
+                </div>
+
+                <p class="bandHint">Click a band name to learn more about them.</p>
+
+                <div class="bands-layout">
+
+                    <!-- Band names (left) -->
+                    <ul class="bandList" id="bandList">
+                        <li><button type="button" class="band-name">Neurosis</button></li>
+                        <li><button type="button" class="band-name">ISIS</button></li>
+                        <li><button type="button" class="band-name">Converge</button></li>
+                        <li><button type="button" class="band-name">Knocked Loose</button></li>
+                        <li><button type="button" class="band-name">Metallica</button></li>
+                        <li><button type="button" class="band-name">The Dillinger Escape Plan</button></li>
+                    </ul>
+
+                    <!-- Band info (right), filled in by script.js -->
+                    <div class="band-info-panel">
+                        <p class="info-placeholder">Band info will show up here.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Band Submission Form Box -->
+            <div class="form-box">
+
+                <div class="head5">
+                    <h2>Submit a Band</h2>
+                </div>
+
+                <form id="bandForm">
+
+                    <label for="bandInput">Your favorite band</label>
+                    <input type="text" id="bandInput" name="band" required>
+
+                    <label for="emailInput">Email</label>
+                    <input type="email" id="emailInput" name="email" required>
+
+                    <button type="submit" class="submit-btn">Submit</button>
+
+                </form>
+
+                <p id="formMessage" class="form-message"></p>
+                <p id="submittedInfo" class="submitted-info"></p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="music.js"></script>
+
+</body>
+</html>
